@@ -27,6 +27,34 @@ body {
   margin: auto;
 }
 
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 .container {
   padding: 0 30px;
+}
+
+// Mixin
+
+@mixin small-font($fontWeight) {
+  font-family: $fontTitillium;
+  font-size: 20px;
+  font-weight: $fontWeight;
+  text-transform: uppercase;
+  color: $black;
 }

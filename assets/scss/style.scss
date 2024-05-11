@@ -3,14 +3,23 @@
 // Header Section CSS Start
 
 .header__wrapper {
-  padding: 70px 0 40px;
+  margin: 80px 0 60px;
+
+  .header__shape__left {
+    position: absolute;
+    top: -80px;
+    left: 0;
+
+    img {
+      max-width: 220px;
+    }
+  }
 
   .header__logo {
     a {
-      text-decoration: none;
-
       img {
-        max-width: 100px;
+        max-width: 90px;
+        height: auto;
       }
 
       span {
@@ -21,6 +30,16 @@
         color: $black;
         padding-left: 20px;
       }
+    }
+  }
+
+  .header__shape__right {
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+    img {
+      max-width: 100px;
     }
   }
 }
@@ -64,6 +83,7 @@
     p {
       font-family: $fontTitillium;
       font-size: 18px;
+      line-height: 120%;
       padding: 20px 0;
       margin-bottom: 0;
     }
@@ -86,7 +106,6 @@
         font-family: $fontTitillium;
         font-size: 20px;
         font-weight: 700;
-        list-style: none;
         color: $red;
         padding-left: 30px;
 
@@ -104,6 +123,43 @@
       }
     }
   }
+  .hero__content__sub-title {
+    padding: 15px 0;
+    margin: 30px 0;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+
+    span {
+      @include small-font(600);
+    }
+  }
+
+  .hero__content__bottom {
+    h5 {
+      @include small-font(700);
+      margin-bottom: 0;
+    }
+  }
+
+  .book__btn {
+    a {
+      width: fit-content;
+      margin: auto;
+      font-family: $fontGrotesque;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 100%;
+      color: $black;
+      padding: 0 30px 0 0;
+      border: 1px solid $black;
+
+      span {
+        padding: 7px 14px !important;
+        margin-right: 20px;
+        border-right: 1px solid $black;
+      }
+    }
+  }
 }
 
 // Hero Section CSS End
@@ -111,7 +167,7 @@
 // Gallery Section CSS Start
 
 .gallery__wrapper {
-  margin-top: 60px;
+  margin-top: 80px;
   .gallery__img > {
     img {
       width: 100%;
