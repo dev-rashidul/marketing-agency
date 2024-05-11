@@ -111,7 +111,7 @@
 // Gallery Section CSS Start
 
 .gallery__wrapper {
-  padding-top: 60px;
+  margin-top: 60px;
   .gallery__img > {
     img {
       width: 100%;
@@ -123,6 +123,18 @@
       bottom: 0;
     }
   }
+  .gallery__spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      max-width: 280px;
+      height: auto;
+    }
+  }
+
   .gallery__shape__right {
     position: absolute;
     right: 0;
