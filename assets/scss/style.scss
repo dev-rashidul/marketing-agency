@@ -1,0 +1,134 @@
+@import "utilities";
+
+// Header Section CSS Start
+
+.header__wrapper {
+  padding: 70px 0 40px;
+
+  .header__logo {
+    a {
+      text-decoration: none;
+
+      img {
+        max-width: 100px;
+      }
+
+      span {
+        font-family: $fontGrotesque;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 100%;
+        color: $black;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+// Header Section CSS End
+
+// Hero Section CSS Start
+
+.hero__container {
+  max-width: 835px;
+  margin: auto;
+  .hero__content {
+    position: relative;
+
+    .left__arrow__icon {
+      position: absolute;
+      top: 0;
+      left: 100px;
+
+      img {
+        width: 65px;
+      }
+    }
+
+    h1 {
+      font-family: $fontGrotesque;
+      font-size: 74px;
+      font-weight: 700;
+      line-height: 90%;
+      margin-bottom: 0;
+      color: $black;
+
+      span.blue {
+        color: $blue;
+      }
+
+      span.red {
+        color: $red;
+      }
+    }
+    p {
+      font-family: $fontTitillium;
+      font-size: 18px;
+      padding: 20px 0;
+      margin-bottom: 0;
+    }
+
+    .right__arrow__icon {
+      position: absolute;
+      top: 0;
+      right: 105px;
+
+      img {
+        width: 65px;
+      }
+    }
+  }
+  .hero__content__lists {
+    ul {
+      gap: 100px;
+      li {
+        position: relative;
+        font-family: $fontTitillium;
+        font-size: 20px;
+        font-weight: 700;
+        list-style: none;
+        color: $red;
+        padding-left: 30px;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 20px;
+          height: 20px;
+          background: $red;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Hero Section CSS End
+
+// Gallery Section CSS Start
+
+.gallery__wrapper {
+  padding-top: 60px;
+  .gallery__img > {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .gallery__shape__left {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .gallery__shape__right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+  }
+}
+
+// Gallery Section CSS End
