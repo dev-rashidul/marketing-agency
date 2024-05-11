@@ -13,6 +13,13 @@
 $fontTitillium: "Titillium Web", sans-serif;
 $fontGrotesque: "Darker Grotesque", sans-serif;
 
+// Font Weight
+
+$fontWN: 400;
+$fontWMD: 500;
+$fontWSMB: 600;
+$fontBLD: 700;
+
 // Colors
 
 $blue: #473ed5;
@@ -25,7 +32,6 @@ body {
   max-width: 1080px;
   width: 100%;
   margin: auto;
-  overflow: hidden;
 }
 
 ol,

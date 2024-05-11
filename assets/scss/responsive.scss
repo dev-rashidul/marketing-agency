@@ -1,0 +1,158 @@
+/* Min Width 993px and Max Width 1199200*/
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .gallery__shape__right {
+    img {
+      max-width: 300px;
+      height: auto;
+    }
+  }
+}
+
+/* Min Width 769px and Max Width 992px */
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .hero__content {
+    h1 {
+      font-size: 56px !important;
+    }
+  }
+
+  .right__arrow__icon {
+    img {
+      width: 50px !important;
+      height: auto;
+    }
+  }
+
+  .left__arrow__icon {
+    img {
+      width: 50px !important;
+      height: auto;
+    }
+  }
+
+  .gallery__shape__right {
+    img {
+      max-width: 250px;
+      height: auto;
+    }
+  }
+
+  .gallery__spinner {
+    img {
+      width: 200px;
+    }
+  }
+}
+
+/* Min Width 300px and Max Width 768px */
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .header__wrapper {
+    padding: 40px 0 30px;
+
+    .header__shape__left {
+      img {
+        max-width: 90px;
+        height: auto;
+      }
+    }
+
+    .header__logo {
+      img {
+        width: 60px;
+      }
+      a {
+        span {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .header__shape__right {
+      img {
+        max-width: 50px;
+        height: auto;
+      }
+    }
+  }
+
+  .hero__container {
+    .hero__content {
+      h1 {
+        font-size: 36px;
+      }
+      .left__arrow__icon,
+      .right__arrow__icon {
+        display: none;
+      }
+      p {
+        font-size: 16px;
+      }
+      .hero__content__sub-title {
+        span {
+          font-size: 14px;
+        }
+      }
+      .hero__content__bottom {
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .hero__content__lists {
+      ul {
+        gap: 40px;
+        li {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .book__btn a {
+      font-size: 18px;
+    }
+  }
+
+  .star__shape {
+    top: 10px;
+    img {
+      width: 50px;
+    }
+  }
+
+  .gallery__wrapper {
+    margin-top: 50px;
+    .gallery__img > {
+      img {
+        border-radius: 0;
+      }
+    }
+    .gallery__shape__left {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      img {
+        max-width: 100px;
+        height: auto;
+      }
+    }
+    .gallery__shape__right {
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+    }
+    .gallery__spinner {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}
