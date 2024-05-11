@@ -148,7 +148,7 @@
       font-family: $fontGrotesque;
       font-size: 26px;
       font-weight: 700;
-      line-height: 100%;
+      line-height: 90%;
       color: $black;
       padding: 0 30px 0 0;
       border: 1px solid $black;
@@ -160,6 +160,44 @@
       }
     }
   }
+}
+
+@mixin hero__shape {
+  position: absolute;
+  bottom: 0;
+}
+
+.hero__left__shape {
+  @include hero__shape;
+  left: 30px;
+}
+
+.hero__right__shape {
+  @include hero__shape;
+  right: 30px;
+}
+
+@mixin box($bg) {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: $bg;
+  border: 1px solid $black;
+}
+
+.white__box {
+  @include box(transparent);
+}
+
+.black__box {
+  @include box($black);
+}
+
+.star__shape {
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
 
 // Hero Section CSS End
